@@ -5,7 +5,15 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const comment =
-  "LGTM. Tests pass, the diff is clean, and in six months someone will read this function and sigh quietly. Probably me.";
+  "LGTM. Tests pass, the diff is clean, and in six months someone will open this file, sigh, and quietly close it again. Probably me.";
+
+// The gate only accepts one line of 1-140 characters: fail loudly here
+// rather than shipping a comment the scorer would refuse.
+if (comment.length < 1 || comment.length > 140 || comment.includes("\n")) {
+  throw new Error(
+    `comment must be one line of 1-140 characters, got ${comment.length}`,
+  );
+}
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });

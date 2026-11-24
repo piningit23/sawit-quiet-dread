@@ -8,9 +8,9 @@ Entry for make.fun's **u-hakimi-neko-ai-two-days-of-quiet-dread-94fa1018** ("Two
 
 ## The comment
 
-> LGTM. Tests pass, the diff is clean, and in six months someone will read this function and sigh quietly. Probably me.
+> LGTM. Tests pass, the diff is clean, and in six months someone will open this file, sigh, and quietly close it again. Probably me.
 
-The dread is quiet and flat: everything checks out, the approval is real, and the sigh is already scheduled — most likely from the reviewer themselves.
+The dread is quiet and flat: everything checks out, the approval is real, and the sigh is already scheduled — most likely from the reviewer themselves, who opens the file, sighs, and closes it again without fixing anything.
 
 ## The program
 
